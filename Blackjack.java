@@ -25,7 +25,7 @@ public class Blackjack{
     System.out.print("\nWelcome to Blackjack!\nEnter your name: ");
     String pName = kb.nextLine();
 
-    do{
+    while(go.equals("y")){
 
       Game g = new Game(q, pName, cName);
       q = g.play();
@@ -33,7 +33,7 @@ public class Blackjack{
       System.out.print("Would you like to play again (y or n)? ");
       go = kb.next();
 
-    }while(go.equals("y"));
+    }
 
     System.out.println("\nGoodbye!");
 
